@@ -1,0 +1,93 @@
+<!-- Content-Type: text/html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>掲示板</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght\@100;300;400;500;700&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c75ab1556e.js"
+            crossorigin="anonymous">
+    </script>
+</head>
+
+<body class="margin jumbotron">
+<section class="container margin mb-5">
+    <h2 class="center display-5" style="">
+        Perl の使い勝手があまりにも悪い件について
+        <span class="text-secondary text-right" style="display: inline-block;">
+                    #1
+            </span>
+    </h2>
+</section>
+
+<section class="container margin mb-3">
+    1 つのスレッドには最大 1000 件までのレスが格納されます
+</section>
+
+<section class="container margin mb-5">
+
+    <div class="card mb-3">
+
+        <div class="card-body">
+            <h6 class="card-title text-info" style="display: inline-block;">
+                風吹けば名無し
+            </h6>
+            <span class="text-secondary text-right" style="display: inline-block;">
+                    #1
+                </span>
+            <p class="card-text">
+                おらこんな言語嫌だ おらこんな言語嫌だ<br>
+                TS をやるだ TS をやるなら 型芸キメて ジェネリクスで無双するだ
+            </p>
+            <p class="text-right">
+                <i class="fa-solid fa-clock"></i>
+                2022/04/21 12:13:45
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container margin mb-5">
+
+    <div class="card mb-3">
+        <div class="card-body">
+
+            <form method="POST" action="/system/operations/create_reply.cgi">
+                <div class="mb-3">
+                    <h3>
+                        新しくレスを投稿する
+                    </h3>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">お名前</label>
+                    <input type="name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">レスの本文</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">レスの本文</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">レスする</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>
